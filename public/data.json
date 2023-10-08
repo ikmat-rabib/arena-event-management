@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "title": "Esports Tournaments",
+      "thumbnail": "thumbnail1.jpg",
+      "image": "image1.jpg",
+      "description": "Experience thrilling esports tournaments, featuring competitive gameplay, exciting prizes, and a captivating atmosphere for gamers and spectators alike.",
+      "price": 499
+    },
+    {
+      "id": 2,
+      "title": "LAN Party Setup",
+      "thumbnail": "thumbnail2.jpg",
+      "image": "image2.jpg",
+      "description": "Create epic LAN parties with state-of-the-art equipment and immersive gaming setups, delivering unforgettable experiences for your gaming community.",
+      "price": 299
+    },
+    {
+      "id": 3,
+      "title": "Live Streaming",
+      "thumbnail": "thumbnail3.jpg",
+      "image": "image3.jpg",
+      "description": "Enhance your gaming events with professional live streaming services, reaching a wider audience and boosting the visibility of your gameplay.",
+      "price": 199
+    },
+    {
+      "id": 4,
+      "title": "Custom Event Themes",
+      "thumbnail": "thumbnail4.jpg",
+      "image": "image4.jpg",
+      "description": "Transform your gaming events with unique and engaging themes, creating memorable experiences that leave a lasting impression.",
+      "price": 149
+    },
+    {
+      "id": 5,
+      "title": "Venue Selection",
+      "thumbnail": "thumbnail5.jpg",
+      "image": "image5.jpg",
+      "description": "Discover the perfect venue for your gaming event, ensuring a seamless and unforgettable gathering for participants and attendees.",
+      "price": 299
+    },
+    {
+      "id": 6,
+      "title": "Prize Sponsorship",
+      "thumbnail": "thumbnail6.jpg",
+      "image": "image6.jpg",
+      "description": "Secure exciting prizes and sponsorships to elevate your tournaments, tailored pricing to meet your unique event needs.",
+      "price": 599
+    }
+  ]
+  

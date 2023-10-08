@@ -12,13 +12,13 @@ const Navbar = () => {
     </>
 
     return (
-        <div>
+        <div className="max-w-6xl mx-auto ">
 
-            <div className="md:sticky">
+            <div className="">
                 <Marque></Marque>
             </div>
 
-            <div className="navbar bg-base-100 ">
+            <div className="navbar  p-0 ">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -35,16 +35,18 @@ const Navbar = () => {
                         {navLinks}
                     </ul>
                 </div>
+
                 <div className="navbar-end">
                     <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                         <div className="w-10 rounded-full">
                             <img src={userDefaultPic} />
                         </div>
                     </label>
-                    <Link>
+                    <Link to='/login'>
                         <button className="btn">Login</button>
                     </Link>
                 </div>
+
             </div>
         </div>
     );
