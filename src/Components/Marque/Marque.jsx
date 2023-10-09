@@ -2,7 +2,7 @@ import Marquee from "react-fast-marquee";
 
 const Marque = () => {
     return (
-        <div className="flex py-2 text-xs md:flex bg-indigo-300">
+        <div className="flex py-2 text-xs md:flex bg-white">
             {/* <div className="px-4 py-2 bg-[#ff6663] rounded-lg text-white "></div> */}
             <Marquee pauseOnHover={true} speed={150}>
                 <p className="mr-52  font-normal ">Winter Offer coming soon.... </p>
