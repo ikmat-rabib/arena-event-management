@@ -1,24 +1,31 @@
 import { Link, NavLink } from "react-router-dom";
-import Marque from "../Marque/Marque";
 import userDefaultPic from '../../assets/user.png'
+import { useContext } from "react";
+import { AuthContext } from "../../Providers/AuthProvider";
+
 
 const Navbar = () => {
 
+    const { user, logOut } = useContext(AuthContext)
+
+    const handleSignOut = () => {
+        logOut()
+            .then()
+            .catch()
+    }
+
     const navLinks = <>
-        <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/about'>About Us</NavLink></li>
-        <li><NavLink to='/contact'>Contact</NavLink></li>
+        <li className=" "><NavLink  to='/'>Home</NavLink></li>
+        <li className=" "><NavLink  to='/about'>About Us</NavLink></li>
+        <li className=" "><NavLink  to='/contact'>Contact</NavLink></li>
 
     </>
 
     return (
-        <div className="max-w-6xl mx-auto ">
+        <div className="bg-white">
 
-            <div className="">
-                <Marque></Marque>
-            </div>
 
-            <div className="navbar  p-0 ">
+            <div className="navbar  p-0 max-w-6xl mx-auto ">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -28,8 +35,9 @@ const Navbar = () => {
                             {navLinks}
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+                    <Link to='/'><div className="text-[#1d308d] font-bold normal-case text-4xl">@RENA</div></Link>
                 </div>
+
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
                         {navLinks}
@@ -37,14 +45,28 @@ const Navbar = () => {
                 </div>
 
                 <div className="navbar-end">
-                    <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                        <div className="w-10 rounded-full">
-                            <img src={userDefaultPic} />
-                        </div>
-                    </label>
-                    <Link to='/login'>
-                        <button className="btn">Login</button>
-                    </Link>
+                    {
+                        user ?
+                            <div className="flex items-center">
+                                <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                                    <div className="w-10 rounded-full">
+                                        <img src={userDefaultPic} />
+                                    </div>
+                                </label>
+                                <button onClick={handleSignOut} className="btn">Sign Out</button>
+                            </div>
+                            :
+                            <div >
+                                <Link to='/login'>
+                                    <button className="btn text-white bg-indigo-500 hover:bg-indigo-800 border-0 rounded-lg  md:mr-3">Login</button>
+                                </Link>
+                                
+                                <Link to='/register'>
+                                    <button className="btn text-white bg-indigo-500 hover:bg-indigo-800 border-0 rounded-lg ">Register</button>
+                                </Link>
+                            </div>
+                    }
+
                 </div>
 
             </div>

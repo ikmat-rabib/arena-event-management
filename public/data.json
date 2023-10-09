@@ -3,49 +3,55 @@
       "id": 1,
       "title": "Esports Tournaments",
       "thumbnail": "thumbnail1.jpg",
-      "image": "image1.jpg",
-      "description": "Experience thrilling esports tournaments, featuring competitive gameplay, exciting prizes, and a captivating atmosphere for gamers and spectators alike.",
-      "price": 499
+      "image": "https://i.ibb.co/vLcZXQB/E-sports.jpg",
+      "card_description": "Experience thrilling esports tournaments, featuring competitive gameplay, exciting prizes, and a captivating atmosphere for gamers and spectators alike.",
+      "price": 499,
+      "description": "At @RENA, we specialize in creating exceptional gaming experiences. Our strategic planning ensures tailored event formats, top-notch production, seamless tournaments, and audience engagement. We secure valuable sponsorships and prizes, all while offering cost-effective solutions. Benefit from our expertise, ensure player and viewer satisfaction, build lasting community connections, and scale your event to new heights. Choose us to transform your esports event into an unforgettable success story, driven by passion, innovation, and professionalism."
     },
     {
       "id": 2,
       "title": "LAN Party Setup",
       "thumbnail": "thumbnail2.jpg",
-      "image": "image2.jpg",
-      "description": "Create epic LAN parties with state-of-the-art equipment and immersive gaming setups, delivering unforgettable experiences for your gaming community.",
-      "price": 299
+      "image": "https://i.ibb.co/sRc2PmM/Lan-Party-setup.jpg",
+      "card_description": "Create epic LAN parties with state-of-the-art equipment and immersive gaming setups, delivering unforgettable experiences for your gaming community.",
+      "price": 299,
+      "description": "At @RENA, we specialize in crafting epic LAN parties. We provide cutting-edge gaming rigs, seamless networking, and thematic setups to create unforgettable gaming experiences. Whether it's a small community gathering or a larger-scale event, we've got you covered. With us, you'll elevate your LAN parties and create gaming memories that last."
     },
     {
       "id": 3,
       "title": "Live Streaming",
       "thumbnail": "thumbnail3.jpg",
-      "image": "image3.jpg",
-      "description": "Enhance your gaming events with professional live streaming services, reaching a wider audience and boosting the visibility of your gameplay.",
-      "price": 199
+      "image": "https://i.ibb.co/P6mWNDr/Live-stream.jpg",
+      "card_description": "Enhance your gaming events with professional live streaming services, reaching a wider audience and boosting the visibility of your gameplay.",
+      "price": 199,
+      "description": "At @RENA, we excel in professional live streaming services. We bring your gaming events to a wider audience, boosting visibility and engagement. Our top-tier setups ensure seamless broadcasts, making every moment shine. Whether it's a competitive tournament or a casual gaming session, we've got the technology and expertise to elevate your live streams. With us, you'll captivate viewers, build your gaming community, and take your events to the next level."
     },
     {
       "id": 4,
       "title": "Custom Event Themes",
       "thumbnail": "thumbnail4.jpg",
-      "image": "image4.jpg",
-      "description": "Transform your gaming events with unique and engaging themes, creating memorable experiences that leave a lasting impression.",
-      "price": 149
+      "image": "https://i.ibb.co/zQPW7bG/Custom-event.jpg",
+      "card_description": "Transform your gaming events with unique and engaging themes, creating memorable experiences that leave a lasting impression.",
+      "price": 149,
+      "description": "At @RENA, we specialize in transforming gaming events with unique and engaging themes. Our expert touch creates immersive experiences that leave a lasting impression on players and spectators alike. From captivating visuals to thematic décor, we tailor every detail to match your vision. Whether it's a competitive tournament or a casual gathering, our custom event themes enhance the ambiance and make your event truly memorable. With us, you'll turn gaming events into captivating adventures, setting the stage for unforgettable moments."
     },
     {
       "id": 5,
       "title": "Venue Selection",
       "thumbnail": "thumbnail5.jpg",
-      "image": "image5.jpg",
-      "description": "Discover the perfect venue for your gaming event, ensuring a seamless and unforgettable gathering for participants and attendees.",
-      "price": 299
+      "image": "https://i.ibb.co/1qpKx86/Venue-Selection.jpg",
+      "card_description": "Discover the perfect venue for your gaming event, ensuring a seamless and unforgettable gathering for participants and attendees.",
+      "price": 299,
+      "description": "At @RENA, we specialize in finding the perfect venue for your gaming gatherings. We ensure a seamless and unforgettable experience for both participants and attendees. Our expertise in venue selection guarantees that your event is hosted in an ideal setting, whether it's a local tournament or a large-scale championship. With us, you'll discover venues that enhance the gaming atmosphere and leave a lasting impression on everyone involved. From scouting to logistics, we handle it all to make your event truly exceptional. Choose @RENA for venue selection that elevates your gaming events to new heights."
     },
     {
       "id": 6,
       "title": "Prize Sponsorship",
       "thumbnail": "thumbnail6.jpg",
-      "image": "image6.jpg",
-      "description": "Secure exciting prizes and sponsorships to elevate your tournaments, tailored pricing to meet your unique event needs.",
-      "price": 599
+      "image": "https://i.ibb.co/Hp4dQzw/Prize-Selection.jpg",
+      "card_description": "Secure exciting prizes and sponsorships to elevate your tournaments, tailored pricing to meet your unique event needs.",
+      "price": 599,
+      "description": "At @RENA, we excel in securing exciting prizes and sponsorships that elevate your gaming tournaments. Our customized pricing ensures your unique event needs are met. Whether it's cash prizes, gaming gear, or sponsorships from industry leaders, we've got you covered. With us, you'll enhance your tournaments, attract top talent, and create unforgettable gaming competitions. We build valuable partnerships to provide enticing rewards and increase the prestige of your events. Choose @RENA for prize sponsorship that sets your tournaments apart and leaves participants eager to compete."
     }
   ]
   

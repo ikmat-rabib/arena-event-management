@@ -28,9 +28,9 @@ const Register = () => {
     }
 
     return (
-        <div className="max-w-6xl mx-auto text-center my-10">
+        <div className="sm:w-auto md:w-2/4 mx-auto text-center text-white glass rounded-xl py-6 my-10">
             <h2 className="text-3xl font-bold">Please Register</h2>
-            <form onSubmit={handleRegister} className="card-body md:w-2/3 mx-auto">
+            <form onSubmit={handleRegister} className="card-body md:w-mx-auto">
                 <div className="form-control">
                     <label className="label">
                         <span className="label-text">Name</span>
@@ -57,13 +57,11 @@ const Register = () => {
                         <span className="label-text">Password</span>
                     </label>
                     <input type="password" name="password" placeholder="password" className="input input-bordered" required />
-                    <label className="label">
-                        <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
-                    </label>
+                    
                 </div>
 
                 <div className="form-control mt-6">
-                    <button className="btn btn-primary">Register</button>
+                <button type="submit" className="btn bg-indigo-800 hover:bg-indigo-600 text-white border-0 ">Login</button>
                 </div>
             </form>
             <p className="mb-10">Already have an account? <Link className="text-green-400 font-bold" to='/login'>Login Here.</Link></p>
