@@ -2,20 +2,23 @@ import { Link } from "react-router-dom";
 
 
 
-const Service = ({service}) => {
+const Service = ({ service }) => {
 
-    const {title, image, card_description, id} = service
-    
+    const { title, image, card_description, price, id } = service
+
     return (
         <div>
-            <div className="card glass ">
+            <div className="card glass mx-2">
                 <figure className="h-48"><img src={image} alt="" /></figure>
                 <div className="card-body ">
                     <h2 className="card-title justify-center">{title}</h2>
                     <p className="pb-4">{card_description}</p>
-                    <Link to={`/services/${id}`} className="card-actions justify-center">
-                        <button className="btn bg-indigo-500 hover:bg-indigo-800 text-white border-0">check it!</button>
-                    </Link>
+                    <div className="flex items-center">
+                        <p className="text-3xl font-semibold text-start"><small>cost:</small> ${price}</p>
+                        <Link to={`/services/${id}`} className="card-actions justify-end">
+                            <button className="btn bg-[#aaff03] hover:bg-[#76b300] text-indigo-800 border-0">check it!</button>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>

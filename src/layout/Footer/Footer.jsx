@@ -5,7 +5,7 @@ const Footer = () => {
 
         <footer className="footer footer-center p-10 bg-[#1d308d] text-primary-content">
             <aside>
-                <h2 className="text-4xl font-extrabold">@RENA</h2>
+                <h2 className="text-4xl font-extrabold text-[#aaff03] ">@RENA</h2>
                 <p className="font-bold">
                     @RENA Management Ltd. <br />Revolution in the Arena since 2020
                 </p>

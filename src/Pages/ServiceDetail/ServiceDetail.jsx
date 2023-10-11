@@ -11,20 +11,23 @@ const ServiceDetail = () => {
 
     return (
 
-        <div className="max-w-6xl mx-auto py-16 text-center">
-            <div className="flex ">
-                <div className="md:w-1/2 "><img className="rounded-lg" src={service.image} alt="" /></div>
-                <div className="mx-auto md:w-1/2 my-auto p-6">
-                    <h2 className="text-3xl font-bold my-4">{service.title}</h2>
-                    <p>{service.card_description}</p>
-                    <p className="my-5  text-4xl font-extrabold text-purple-700">Cost: ${service.price}</p>
+        <div >
+            <img className="-z-30 fixed w-full h-full object-cover" src="/public/images/service-detail-bg.jpg" alt="" />
+            <div className="max-w-6xl mx-auto py-16  text-center text-white">
+                <div className="flex mt-10 ">
+                    <div className="mx-auto md:w-1/3 my-auto p-6 glass rounded-xl">
+                        <h2 className="text-3xl font-bold my-4">{service.title}</h2>
+                        <p>{service.card_description}</p>
+                        <p className="my-5  text-4xl font-extrabold text-[#aaff03]">Cost: ${service.price}</p>
+                    </div>
+                    <div className="md:w-1/2 "><img className="rounded-xl" src={service.image} alt="" /></div>
                 </div>
-            </div>
 
-            <div className="my-6 ">
-                <p>{service.description}</p>
-                <div className="card-actions justify-center my-4">
-                    <button className="btn btn-primary">Listen</button>
+                <div className="my-6 ">
+                    <p className="p-4 glass rounded-xl">{service.description}</p>
+                    <div className="card-actions justify-center my-4">
+                        <button className="btn  bg-[#aaff03] hover:bg-[#76b300] text-indigo-800 border-0">Listen</button>
+                    </div>
                 </div>
             </div>
         </div>

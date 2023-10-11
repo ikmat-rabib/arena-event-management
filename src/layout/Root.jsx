@@ -6,7 +6,10 @@ import Navbar from "../Components/Navbar/Navbar";
 const Root = () => {
     return (
         <div className=" ">
-            <video className="-z-10 fixed min-h-full min-w-full" autoPlay loop src="/src/assets/pexels_videos_2759477 (720p).mp4"></video>
+            {/* <div className="bg-indigo-600 -z-20"></div> */}
+           
+            {/* <img className="-z-10 absolute w-full h-full object-cover" src="/public/images/homepage-bg.jpg" alt="" /> */}
+            {/* <div className="-z-20 absolute inset-0 bg-indigo-700  "></div> */}
             <Navbar></Navbar>
             <Outlet></Outlet>
             <Footer></Footer>

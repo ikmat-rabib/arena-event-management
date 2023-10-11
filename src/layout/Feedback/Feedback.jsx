@@ -69,10 +69,11 @@ export default function App() {
     )
 
     return (
-        <div ref={sliderRef} className="keen-slider max-w-4xl my-16 mx-auto rounded-xl glass" style={{ height: 200 }}>
+       <div className="hidden sm:block">
+         <div ref={sliderRef} className="keen-slider max-w-4xl my-16 mx-auto rounded-xl glass hidden sm:block" style={{ height: 200 }}>
             <div className="keen-slider__slide number-slide1">
-                <div className="card lg:card-side  ">
-                    <figure className="w-1/3"><img src="/public/images/person 1.jpg" alt="Album" /></figure>
+                <div className="card card-side  ">
+                    <figure className="w-1/3"><img src="/public/images/person1.jpg" alt="Album" /></figure>
                     <div className="card-body text-white w-2/3">
                         <p className="font-light">"Exceptional gaming event management service! Flawless execution, seamless organization, and a memorable gaming experience. Highly recommend for anyone looking to host a top-tier gaming event."</p>
                         <div className="flex items-baseline gap-2">
@@ -84,8 +85,8 @@ export default function App() {
             </div>
 
             <div className="keen-slider__slide number-slide2">
-                <div className="card lg:card-side  ">
-                    <figure className="w-1/3"><img src="/public/images/person 2.jpg" alt="Album" /></figure>
+                <div className="card card-side  ">
+                    <figure className="w-1/3"><img src="/public/images/person2.jpg" alt="Album" /></figure>
                     <div className="card-body text-white w-2/3">
                         <p className="font-light">"Outstanding gaming event management! Impeccable attention to detail, friendly staff, and a truly immersive gaming atmosphere. Made our event a huge success. 5 stars!"</p>
                         <div className="flex items-baseline gap-2 ">
@@ -97,8 +98,8 @@ export default function App() {
             </div>
 
             <div className="keen-slider__slide number-slide3">
-                <div className="card lg:card-side  ">
-                    <figure className="w-1/3"><img src="/public/images/person 3.jpg" alt="Album" /></figure>
+                <div className="card card-side  ">
+                    <figure className="w-1/3"><img src="/public/images/person3.jpg" alt="Album" /></figure>
                     <div className="card-body text-white w-2/3">
                         <p className="font-light">"Absolutely thrilled with the gaming event management service! From start to finish, it was a gaming enthusiast's dream. Exceptional planning, superb execution, and a truly memorable experience. Can't wait for the next event!"</p>
                         <div className="flex items-baseline gap-2 ">
@@ -110,10 +111,10 @@ export default function App() {
             </div>
 
             <div className="keen-slider__slide number-slide4">
-                <div className="card lg:card-side  ">
-                    <figure className="w-1/3"><img src="/public/images/person 4.jpg" alt="Album" /></figure>
+                <div className="card card-side  ">
+                    <figure className="w-1/3"><img src="/public/images/person4.jpg" alt="Album" /></figure>
                     <div className="card-body text-white w-2/3">
-                        <p className="font-light">"Flawless gaming event management! Their expertise and dedication transformed our event into a gaming paradise. Every aspect was meticulously handled, making it an unforgettable experience for all attendees. Highly recommended!"</p>
+                        <p className="font-light">"Flawless gaming event management! Their expertise and dedication transformed our event into a gaming paradise. Every aspect was meticulously handled. Highly recommended!"</p>
                         <div className="flex items-baseline gap-2 ">
                         <h2 className="card-title ">Hasina</h2>
                         <p className="text-sm font-extralight"><small>(Politician)</small></p>
@@ -122,5 +123,6 @@ export default function App() {
                 </div>
             </div>
         </div>
+       </div>
     )
 }

@@ -22,7 +22,7 @@ const Navbar = () => {
     </>
 
     return (
-        <div className="bg-[#1d308d] ">
+        <div className="bg-[#1d308d] absolute top-0 left-0 right-0 ">
 
 
             <div className="navbar  p-0 max-w-6xl mx-auto ">
@@ -35,7 +35,7 @@ const Navbar = () => {
                             {navLinks}
                         </ul>
                     </div>
-                    <Link to='/'><div className="text-white font-extrabold normal-case text-4xl">@RENA</div></Link>
+                    <Link to='/'><div className="text-[#aaff03]  font-extrabold normal-case text-4xl">@RENA</div></Link>
                 </div>
 
                 <div className="navbar-center hidden lg:flex">
@@ -53,16 +53,16 @@ const Navbar = () => {
                                         <img src={userDefaultPic} />
                                     </div>
                                 </label>
-                                <button onClick={handleSignOut} className="btn">Sign Out</button>
+                                <button onClick={handleSignOut} className="btn bg-[#aaff03] hover:bg-[#76b300] text-indigo-800 border-0 rounded-lg">Sign Out</button>
                             </div>
                             :
                             <div >
                                 <Link to='/login'>
-                                    <button className="btn text-white bg-indigo-500 hover:bg-indigo-800 border-0 rounded-lg  md:mr-3">Login</button>
+                                    <button className="btn bg-[#aaff03] hover:bg-[#76b300] text-indigo-800 border-0 rounded-lg  md:mr-3">Login</button>
                                 </Link>
                                 
                                 <Link to='/register'>
-                                    <button className="btn text-white bg-indigo-500 hover:bg-indigo-800 border-0 rounded-lg ">Register</button>
+                                    <button className="btn bg-[#aaff03] hover:bg-[#76b300] text-indigo-800 border-0 rounded-lg ">Register</button>
                                 </Link>
                             </div>
                     }

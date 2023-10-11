@@ -5,9 +5,16 @@ const Marque = () => {
         <div className="flex py-2 text-xs md:flex bg-white">
             {/* <div className="px-4 py-2 bg-[#ff6663] rounded-lg text-white "></div> */}
             <Marquee pauseOnHover={true} speed={150}>
-                <p className="mr-52  font-normal ">Winter Offer coming soon.... </p>
-                <p className="mr-52  font-normal ">Call: 01234-567890</p>
-                <p className="mr-52  font-normal ">Email: arcade@arena@mail.com</p>
+                <div className="flex gap-[88px]">
+                <img className="h-20" src="/public/images/logo1.jpg" alt="" />
+                <img className="h-20" src="/public/images/logo2.jpg" alt="" />
+                <img className="h-20"  src="/public/images/logo3.jpg" alt="" />
+                <img className="h-20"  src="/public/images/logo4.jpg" alt="" />
+                <img className="h-20"  src="/public/images/logo5.jpg" alt="" />
+                <img className="h-20"  src="/public/images/logo6.jpg" alt="" />
+                <img className="h-20"  src="/public/images/logo7.jpg" alt="" />
+                {/* <img className="h-20"  src="/public/images/logo4.jpg" alt="" /> */}
+                </div>
             </Marquee>
         </div>
     );
