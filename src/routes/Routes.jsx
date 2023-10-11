@@ -7,6 +7,7 @@ import ServiceDetail from "../Pages/ServiceDetail/ServiceDetail";
 import PrivateRoute from "./PrivateRoute";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import ContactPage from "../Pages/ContactPage/ContactPage";
+import AboutPage from "../Pages/AboutPage/AboutPage";
 
 
 const routes = createBrowserRouter([
@@ -36,6 +37,10 @@ const routes = createBrowserRouter([
             {
                 path: '/contact',
                 element: <ContactPage></ContactPage>
+            },
+            {
+                path: "/about",
+                element: <AboutPage></AboutPage>
             }
         ]
     }

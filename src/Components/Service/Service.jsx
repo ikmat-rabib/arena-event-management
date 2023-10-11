@@ -8,7 +8,7 @@ const Service = ({ service }) => {
 
     return (
         <div>
-            <div className="card glass mx-2">
+            <div className="card glass ">
                 <figure className="h-48"><img src={image} alt="" /></figure>
                 <div className="card-body ">
                     <h2 className="card-title justify-center">{title}</h2>

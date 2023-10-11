@@ -8,7 +8,7 @@ const Services = () => {
     console.log(services);
 
     return (
-        <div className="">
+        <div className="mx-2">
 
             <div className="max-w-6xl mx-auto py-16 text-center text-red-50 ">
                 <div className="glass  max-w-fit mx-auto p-2 my-6 rounded-lg">
