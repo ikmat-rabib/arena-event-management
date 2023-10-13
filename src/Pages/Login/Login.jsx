@@ -2,11 +2,15 @@
 import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
+import { FaGoogle } from 'react-icons/fa';
 
 
 const Login = () => {
 
+
+
     const { signIn } = useContext(AuthContext)
+
     const location = useLocation();
     const navigate = useNavigate()
     console.log('location of login page', location);
@@ -48,10 +52,17 @@ const Login = () => {
                             </label>
                         </div>
 
-                        <div className="form-control mt-6">
+                        <div className="form-control">
                             <button type="submit" className="btn bg-[#aaff03] hover:bg-[#76b300] text-indigo-800 border-0 ">Login</button>
                         </div>
                     </form>
+
+                    <div>
+                        <p>or</p>
+                        <h3>Sign in with</h3>
+                        <button className="p-3 my-3 text-3xl border rounded-lg bg-[#aaff03] hover:bg-[#76b300] text-indigo-800"> <FaGoogle></FaGoogle> </button>
+                    </div>
+
                     <p className="mb-6">Don't have an account? <Link className="text-[#aaff03] font-bold" to='/register'>Register Here.</Link></p>
                 </div>
             </div>

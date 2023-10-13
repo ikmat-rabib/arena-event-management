@@ -15,9 +15,11 @@ const Navbar = () => {
     }
 
     const navLinks = <>
-        <li className=" "><NavLink className={`hover:bg-red-600`} to='/'>Home</NavLink></li>
+        <li className=" "><NavLink  to='/'>Home</NavLink></li>
         <li className=" "><NavLink  to='/about'>About Us</NavLink></li>
         <li className=" "><NavLink  to='/contact'>Contact</NavLink></li>
+        <li className=" "><NavLink  to='/premium'>Premium Deals</NavLink></li>
+        <li className=" "><NavLink  to='/upcoming'>Upcoming Events</NavLink></li>
 
     </>
 
@@ -35,7 +37,7 @@ const Navbar = () => {
                             {navLinks}
                         </ul>
                     </div>
-                    <Link to='/'><div className="text-[#aaff03]  font-extrabold normal-case text-4xl">@RENA</div></Link>
+                    <Link to='/'><div className="text-[#aaff03]  font-extrabold normal-case md:text-4xl ">@RENA</div></Link>
                 </div>
 
                 <div className="navbar-center hidden lg:flex">
@@ -48,21 +50,22 @@ const Navbar = () => {
                     {
                         user ?
                             <div className="flex items-center">
-                                <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                                    <span><small className="text-white">{user.email}</small></span>
+                                <label tabIndex={0} className="btn btn-ghost btn-circle avatar ">
                                     <div className="w-10 rounded-full">
                                         <img src={userDefaultPic} />
                                     </div>
                                 </label>
-                                <button onClick={handleSignOut} className="btn bg-[#aaff03] hover:bg-[#76b300] text-indigo-800 border-0 rounded-lg">Sign Out</button>
+                                <button onClick={handleSignOut} className="btn btn-sm bg-[#aaff03] hover:bg-[#76b300] text-indigo-800 border-0 rounded-lg">Sign Out</button>
                             </div>
                             :
                             <div >
                                 <Link to='/login'>
-                                    <button className="btn bg-[#aaff03] hover:bg-[#76b300] text-indigo-800 border-0 rounded-lg  md:mr-3">Login</button>
+                                    <button className="btn btn-sm bg-[#aaff03] hover:bg-[#76b300] text-indigo-800 border-0 rounded-lg  md:mr-3">Login</button>
                                 </Link>
                                 
                                 <Link to='/register'>
-                                    <button className="btn bg-[#aaff03] hover:bg-[#76b300] text-indigo-800 border-0 rounded-lg ">Register</button>
+                                    <button className="btn btn-sm bg-[#aaff03] hover:bg-[#76b300] text-indigo-800 border-0 rounded-lg ">Register</button>
                                 </Link>
                             </div>
                     }
@@ -75,3 +78,11 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+
+
+
+
+
+

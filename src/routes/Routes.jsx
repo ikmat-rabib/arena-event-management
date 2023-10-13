@@ -8,6 +8,8 @@ import PrivateRoute from "./PrivateRoute";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import ContactPage from "../Pages/ContactPage/ContactPage";
 import AboutPage from "../Pages/AboutPage/AboutPage";
+import PremiumDeals from "../Pages/PremiumDeals/PremiumDeals";
+import UpcomingEvents from "../Pages/UpcomingEvents/UpcomingEvents";
 
 
 const routes = createBrowserRouter([
@@ -41,6 +43,14 @@ const routes = createBrowserRouter([
             {
                 path: "/about",
                 element: <AboutPage></AboutPage>
+            },
+            {
+                path: '/premium',
+                element: <PrivateRoute><PremiumDeals></PremiumDeals></PrivateRoute>
+            },
+            {
+                path: '/upcoming',
+                element: <PrivateRoute><UpcomingEvents></UpcomingEvents></PrivateRoute>
             }
         ]
     }

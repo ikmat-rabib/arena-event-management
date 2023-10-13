@@ -20,12 +20,12 @@ const ContactForm = () => {
                         <label className="label">
                             <span className="text-red-50 label-text">Email</span>
                         </label>
-                        <input type="email" placeholder="email" className="input input-bordered" required />
+                        <input type="email" placeholder="Email" className="input input-bordered" required />
                     </div>
 
                     <div className="form-control">
                         <label className="label">
-                            <span className="text-red-50 label-text">Your text here</span>
+                            <span className="text-red-50 label-text">Your message here</span>
                         </label>
                         <textarea className="rounded-lg max-h-fit" name="text-area" id="" cols="" rows="6"></textarea>
 
