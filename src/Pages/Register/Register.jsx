@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { Link,  useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
-import { ToastContainer } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 
 
 const Register = () => {
@@ -42,7 +42,8 @@ const Register = () => {
         createUser(email, password)
             .then(result => {
                 console.log(result.user)
-                setSuccess('')
+                // setSuccess('')
+                toast('Registration Successful')
                 navigate('/')
             })
 
@@ -56,8 +57,8 @@ const Register = () => {
         <div>
             <img className="-z-30 fixed w-full h-full object-cover" src="/public/images/login-reg-bg.jpg" alt="" />
             <div className="py-32">
-                <div className="sm:w-auto md:w-2/4 mx-auto text-center  glass rounded-xl py-6 my-10">
-                    <h2 className="text-3xl text-white font-bold">Please Register</h2>
+                <div className="sm:w-auto md:w-2/4 mx-auto text-center text-white glass rounded-xl py-6 my-10">
+                    <h2 className="text-3xl  font-bold">Please Register</h2>
                     <form onSubmit={handleRegister} className="card-body md:w-mx-auto">
                         <div className="form-control">
                             <label className="label">
@@ -91,7 +92,7 @@ const Register = () => {
                         {
                             registerError && <p className="bg-white text-2xl py-2 font-medium text-red-600 rounded-lg">{registerError}</p>
                         }
-                        {
+                        {/* {
                             success && <ToastContainer position="top-center"
                             autoClose={4000}
                             hideProgressBar={false}
@@ -102,11 +103,21 @@ const Register = () => {
                             draggable
                             pauseOnHover
                             theme="colored"></ToastContainer>
-                        }
+                        } */}
 
                         <div className="form-control mt-6">
                             <button  type="submit" className="btn bg-[#aaff03] hover:bg-[#76b300] text-indigo-800 border-0 ">Register</button>
                         </div>
+                        <ToastContainer position="top-center"
+                            autoClose={4000}
+                            hideProgressBar={false}
+                            newestOnTop={false}
+                            closeOnClick
+                            rtl={false}
+                            pauseOnFocusLoss
+                            draggable
+                            pauseOnHover
+                            theme="colored"></ToastContainer>
                     </form>
                     <p className="mb-10">Already have an account? <Link className="text-[#aaff03] font-bold" to='/login'>Login Here.</Link></p>
                 </div>

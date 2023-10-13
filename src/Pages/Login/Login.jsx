@@ -9,7 +9,7 @@ const Login = () => {
 
 
 
-    const { signIn } = useContext(AuthContext)
+    const { signIn, handleGoogleSignIn } = useContext(AuthContext)
 
     const location = useLocation();
     const navigate = useNavigate()
@@ -58,9 +58,9 @@ const Login = () => {
                     </form>
 
                     <div>
-                        <p>or</p>
-                        <h3>Sign in with</h3>
-                        <button className="p-3 my-3 text-3xl border rounded-lg bg-[#aaff03] hover:bg-[#76b300] text-indigo-800"> <FaGoogle></FaGoogle> </button>
+                        <p>or,</p>
+                        <h3 className="text-2xl font-semibold">Sign in with</h3>
+                        <button onClick={handleGoogleSignIn} className="p-3 my-3 text-3xl border rounded-lg bg-[#aaff03] hover:bg-[#76b300] text-indigo-800"> <FaGoogle></FaGoogle> </button>
                     </div>
 
                     <p className="mb-6">Don't have an account? <Link className="text-[#aaff03] font-bold" to='/register'>Register Here.</Link></p>

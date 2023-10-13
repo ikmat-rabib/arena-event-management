@@ -11,7 +11,8 @@ const Services = () => {
         <div className="mx-2">
 
             <div className="max-w-6xl mx-auto py-16 text-center text-red-50 ">
-                <div className="glass  max-w-fit mx-auto p-2 my-6 rounded-lg">
+                <div data-aos='zoom-in'
+                    data-aos-duration="3000" className="glass  max-w-fit mx-auto p-2 my-6 rounded-lg">
                     <h2 className="text-3xl font-semibold my-2">Our Gaming Event Services</h2>
                     <p className=" text-sm my-2">Enhance gaming events with our expert services for an unforgettable experiences</p>
                 </div>

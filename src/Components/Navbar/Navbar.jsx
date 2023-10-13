@@ -50,10 +50,10 @@ const Navbar = () => {
                     {
                         user ?
                             <div className="flex items-center">
-                                    <span><small className="text-white">{user.email}</small></span>
+                                    <span><small className="text-white">{user.displayName}</small></span>
                                 <label tabIndex={0} className="btn btn-ghost btn-circle avatar ">
                                     <div className="w-10 rounded-full">
-                                        <img src={userDefaultPic} />
+                                        <img src={user.photoURL} />
                                     </div>
                                 </label>
                                 <button onClick={handleSignOut} className="btn btn-sm bg-[#aaff03] hover:bg-[#76b300] text-indigo-800 border-0 rounded-lg">Sign Out</button>
