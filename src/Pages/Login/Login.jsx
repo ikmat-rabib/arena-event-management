@@ -8,8 +8,6 @@ import { toast } from "react-toastify";
 
 const Login = () => {
 
-
-
     const { signIn, handleGoogleSignIn } = useContext(AuthContext);
 
     const location = useLocation();
@@ -22,8 +20,6 @@ const Login = () => {
         const email = form.get('email');
         const password = form.get('password');
         console.log(email, password)
-
-    
 
         signIn(email, password)
             .then(result => {
@@ -54,6 +50,24 @@ const Login = () => {
             })
     }
 
+    const googleLogin = () => {
+        handleGoogleSignIn()
+        .then(() => {
+            toast.success('Login Successful', {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "colored",
+                })
+            navigate(location?.state ? location.state : '/')
+        })
+       
+    }
+
     return (
         <div>
             <img className="-z-30 fixed w-full h-full object-cover" src="https://i.ibb.co/kGFZ7Lm/login-reg-bg.jpg" alt="" />
@@ -81,7 +95,7 @@ const Login = () => {
                     <div>
                         <p>or,</p>
                         <h3 className="text-2xl font-semibold">Sign in with</h3>
-                        <button onClick={handleGoogleSignIn} className="p-3 my-3 text-3xl border rounded-lg bg-[#aaff03] hover:bg-[#76b300] text-indigo-800"> <FaGoogle></FaGoogle> </button>
+                        <button onClick={googleLogin} className="p-3 my-3 text-3xl border rounded-lg bg-[#aaff03] hover:bg-[#76b300] text-indigo-800"> <FaGoogle></FaGoogle> </button>
                     </div>
 
                     <p className="mb-6">Don't have an account? <Link className="text-[#aaff03] font-bold" to='/register'>Register Here.</Link></p>

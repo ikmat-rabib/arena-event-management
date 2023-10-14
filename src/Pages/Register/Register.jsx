@@ -13,6 +13,7 @@ const Register = () => {
     const [registerError, setRegisterError] = useState('')
     const [success, setSuccess] = useState('')
 
+    console.log(success);
 
     const navigate = useNavigate()
 
