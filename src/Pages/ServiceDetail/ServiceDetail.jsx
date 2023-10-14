@@ -12,7 +12,7 @@ const ServiceDetail = () => {
     return (
 
         <div >
-            <img className="-z-30 fixed w-full h-full object-cover" src="/public/images/service-detail-bg.jpg" alt="" />
+            <img className="-z-30 fixed w-full h-full object-cover" src="https://i.ibb.co/FHMnSGh/service-detail-bg.jpg" alt="" />
             <div className="max-w-6xl mx-auto py-16  text-center text-white">
                 <div className=" md:flex mt-10 ">
                     <div className="mx-auto md:w-1/3 my-auto p-6 glass rounded-xl">

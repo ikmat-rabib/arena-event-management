@@ -72,7 +72,7 @@ const Register = () => {
 
     return (
         <div>
-            <img className="-z-30 fixed w-full h-full object-cover" src="/public/images/login-reg-bg.jpg" alt="" />
+            <img className="-z-30 fixed w-full h-full object-cover" src="https://i.ibb.co/kGFZ7Lm/login-reg-bg.jpg" alt="" />
             <div className="py-32">
                 <div className="sm:w-auto md:w-2/4 mx-auto text-center text-white glass rounded-xl py-6 my-10">
                     <h2 className="text-3xl mt-6 font-bold">Please Register</h2>

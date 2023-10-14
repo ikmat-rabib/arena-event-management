@@ -56,7 +56,7 @@ const Login = () => {
 
     return (
         <div>
-            <img className="-z-30 fixed w-full h-full object-cover" src="/public/images/login-reg-bg.jpg" alt="" />
+            <img className="-z-30 fixed w-full h-full object-cover" src="https://i.ibb.co/kGFZ7Lm/login-reg-bg.jpg" alt="" />
             <div className="py-32">
                 <div className="sm:w-auto md:w-2/4 mx-auto  text-center text-white glass rounded-xl py-5 ">
                     <h2 className="text-3xl font-bold">Please Login</h2>

@@ -8,7 +8,7 @@ const Services = () => {
     console.log(services);
 
     return (
-        <div className="mx-2">
+        <div className="mx-2 overflow-x-hidden">
 
             <div className="max-w-6xl mx-auto py-16 text-center text-red-50 ">
                 <div data-aos='zoom-in-down'
