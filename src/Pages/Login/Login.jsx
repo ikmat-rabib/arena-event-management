@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { FaGoogle } from 'react-icons/fa';
+import { toast } from "react-toastify";
 
 
 const Login = () => {
@@ -25,7 +26,16 @@ const Login = () => {
         signIn(email, password)
             .then(result => {
                 console.log(result.user)
-
+                toast.success('Login Successful', {
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "colored",
+                    })
                 navigate(location?.state ? location.state : '/')
             })
             .catch(error => {

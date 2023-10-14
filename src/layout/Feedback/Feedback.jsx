@@ -69,7 +69,7 @@ export default function App() {
     )
 
     return (
-       <div className="hidden sm:block">
+       <div className="hidden sm:block"  data-aos="fade-up">
          <div ref={sliderRef} className="keen-slider max-w-4xl my-16 mx-auto rounded-xl glass hidden sm:block" style={{ height: 200 }}>
             <div className="keen-slider__slide number-slide1">
                 <div className="card card-side  ">

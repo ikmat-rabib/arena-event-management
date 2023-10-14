@@ -2,7 +2,7 @@
 
 const ContactForm = () => {
     return (
-        <div className="mx-2">
+        <div className="mx-2" data-aos="zoom-out"  data-aos-duration="2500">
             <div className="flex rounded-xl glass max-w-6xl mx-auto my-20 ">
                 <div className="w-1/2  hidden sm:block">
                     <img className="rounded-l-xl w-full h-full object-cover" src="/public/images/contac-form-bg.jpg" alt="" />
@@ -33,7 +33,7 @@ const ContactForm = () => {
                         
 
                     <div className="form-control mt-6">
-                        <button className="btn bg-[#aaff03] hover:bg-[#76b300] text-indigo-800 border-0">Login</button>
+                        <button className="btn bg-[#aaff03] hover:bg-[#76b300] text-indigo-800 border-0">Send Message</button>
                     </div>
                 </form>
             </div>

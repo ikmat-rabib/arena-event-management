@@ -9,7 +9,7 @@ const Service = ({ service }) => {
     return (
         <div>
             <div data-aos="fade-up"
-                data-aos-duration="3000" className="card glass ">
+                data-aos-duration="2500" className="card glass ">
                 <figure className="h-48"><img src={image} alt="" /></figure>
                 <div className="card-body ">
                     <h2 className="card-title justify-center">{title}</h2>
