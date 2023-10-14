@@ -10,7 +10,7 @@ const Login = () => {
 
 
 
-    const { signIn, handleGoogleSignIn } = useContext(AuthContext)
+    const { signIn, handleGoogleSignIn } = useContext(AuthContext);
 
     const location = useLocation();
     const navigate = useNavigate()
@@ -22,6 +22,8 @@ const Login = () => {
         const email = form.get('email');
         const password = form.get('password');
         console.log(email, password)
+
+    
 
         signIn(email, password)
             .then(result => {
@@ -38,8 +40,17 @@ const Login = () => {
                     })
                 navigate(location?.state ? location.state : '/')
             })
-            .catch(error => {
-                console.error(error);
+            .catch(() => {
+                toast.error("User Email/Password doesn't match", {
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "colored",
+                    });
             })
     }
 
@@ -52,11 +63,11 @@ const Login = () => {
                     <form onSubmit={HandleLogin} className="card-body md:w-mx-auto">
 
                         <div className="form-control">
-                            <input type="email" name="email" placeholder="Email" className="input input-bordered" required />
+                            <input type="email" name="email" placeholder="Email" className="input input-bordered text-black" required />
                         </div>
 
                         <div className="form-control">
-                            <input type="password" name="password" placeholder="Password" className="input input-bordered" required />
+                            <input type="password" name="password" placeholder="Password" className="input input-bordered text-black" required />
                             <label className="label">
                                 <a href="#" className="label-text-alt link link-hover text-white font-bold">Forgot password?</a>
                             </label>

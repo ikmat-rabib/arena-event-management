@@ -2,7 +2,7 @@
 
 const ContactForm = () => {
     return (
-        <div className="mx-2" data-aos="zoom-out"  data-aos-duration="2500">
+        <div className="mx-2" data-aos="zoom-out"  data-aos-duration="2000">
             <div className="flex rounded-xl glass max-w-6xl mx-auto my-20 ">
                 <div className="w-1/2  hidden sm:block">
                     <img className="rounded-l-xl w-full h-full object-cover" src="/public/images/contac-form-bg.jpg" alt="" />

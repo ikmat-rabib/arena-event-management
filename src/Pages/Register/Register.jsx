@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { toast } from "react-toastify";
 import { FaGoogle } from "react-icons/fa";
+import { updateProfile } from "firebase/auth";
 
 
 const Register = () => {
@@ -43,6 +44,14 @@ const Register = () => {
             .then(result => {
                 console.log(result.user)
                 setSuccess('Registration Successful')
+
+                updateProfile(result.user, {
+                    displayName: name,
+                    photoURL: photo
+                })
+                .then()
+                .catch()
+
                 toast.success('Registration Successful', {
                     position: "top-center",
                     autoClose: 5000,
@@ -73,12 +82,12 @@ const Register = () => {
                             <label className="label">
                                 <span className="label-text text-white">Name</span>
                             </label>
-                            <input type="text" name="name" placeholder="Name" className="input input-bordered" required />
+                            <input type="text" name="name" placeholder="Name" className="input input-bordered text-black" required />
                         </div>
 
                         <div className="form-control">
                             <label className="label">
-                                <span className="text-white label-text">Photo URL</span>
+                                <span className="text-white label-text ">Photo URL</span>
                             </label>
                             <input type="text" name="photo" placeholder="Photo URL" className="input input-bordered text-black" required />
                         </div>

@@ -1,4 +1,4 @@
-import { useLoaderData, useParams } from "react-router-dom";
+import { Link, useLoaderData, useParams } from "react-router-dom";
 
 
 
@@ -25,9 +25,9 @@ const ServiceDetail = () => {
 
                 <div className="my-6 ">
                     <p className="p-4 glass rounded-xl">{service.description}</p>
-                    <div className="card-actions justify-center my-4">
-                        <button className="btn  bg-[#aaff03] hover:bg-[#76b300] text-indigo-800 border-0">Premium Deals</button>
-                    </div>
+                    <Link to="/premium" >
+                        <button  className="btn mt-4 bg-[#aaff03] hover:bg-[#76b300] text-indigo-800 border-0">Premium Deals</button>
+                    </Link>
                 </div>
             </div>
         </div>
