@@ -1,6 +1,6 @@
 # @RENA : A Gaming Event Management Website
 ---------------------------------------------
-Live link : 
+**Live link** : https://assignment-9-firebase-68d3a.web.app/
 
 ## Features and Functionalities
 
